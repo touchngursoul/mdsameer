@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Md Sameer — Chief Operations Manager & Digital Growth Professional</title>
+<meta name="description" content="Portfolio of Md Sameer, Chief Operations Manager at Bit Byte Fly Pvt. Ltd., SEO and digital growth professional based in Patna, Bihar." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --navy:#06182f;
+  --navy-mid:#08284a;
+  --navy-lt:#0c3a69;
+  --gold:#06c89b;
+  --gold-lt:#16b7ff;
+  --gold-dim:rgba(6,200,155,.15);
+  --cream:#f4fbff;
+  --muted:#9ab4cc;
+  --white:#ffffff;
+  --line:rgba(22,183,255,.26);
+  --soft-line:rgba(255,255,255,.11);
+  --cursor-blue:#0867d8;
+  --cursor-cyan:#16b7ff;
+  --cursor-teal:#08c6c8;
+  --cursor-green:#12c888;
+  --cursor-gradient:linear-gradient(120deg,var(--cursor-blue),var(--cursor-cyan),var(--cursor-green));
+  --ff-head:'Playfair Display', Georgia, serif;
+  --ff-body:'DM Sans', sans-serif;
+  --ff-mono:'DM Mono', monospace;
+  --radius:14px;
+  --ease:cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--navy);
+  color:var(--cream);
+  font-family:var(--ff-body);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+}
+a{color:inherit}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 3rem;
+  background:rgba(6,24,47,.90);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-logo{
+  font-family:var(--ff-head);
+  color:var(--gold);
+  text-decoration:none;
+  font-size:1.2rem;
+}
+.nav-links{display:flex;gap:1.35rem;list-style:none;align-items:center}
+.nav-links a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.nav-links a:hover{color:var(--gold-lt)}
+.hamburger{display:none;background:none;border:0;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:var(--cream);margin:5px 0}
+section{position:relative;z-index:1}
+.container{max-width:1120px;margin:auto;padding:0 2rem}
+.section-header{display:flex;align-items:center;gap:1.2rem;margin-bottom:3rem}
+.section-label{color:var(--gold);font-family:var(--ff-mono);font-size:.72rem;letter-spacing:2.5px}
+.section-title{font-family:var(--ff-head);font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15}
+.section-line{height:1px;background:var(--line);flex:1}
+
+/* hero */
+#hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:7rem 2rem 4rem;
+  background:
+    radial-gradient(ellipse 70% 60% at 85% 45%, rgba(18,200,136,.16), transparent 70%),
+    radial-gradient(ellipse 55% 80% at 10% 80%, rgba(22,183,255,.13), transparent 65%),
+    linear-gradient(135deg,#041326 0%,#06182f 45%,#08284a 100%);
+}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.hero-tag{display:inline-flex;gap:.7rem;align-items:center;color:var(--gold);font-family:var(--ff-mono);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.4rem}
+.hero-tag:before{content:"";width:30px;height:1px;background:var(--gold)}
+.hero-name{font-family:var(--ff-head);font-size:clamp(3rem,6vw,5.2rem);line-height:1.03;color:var(--white)}
+.hero-name em{display:block;background:var(--cursor-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+.hero-subtitle{margin:1.2rem 0 2rem;color:var(--muted);max-width:620px}
+.hero-stats{display:flex;gap:2.2rem;border-top:1px solid var(--line);padding-top:1.7rem;margin-bottom:2.2rem}
+.stat-num{font-family:var(--ff-head);font-size:2.1rem;color:var(--gold);line-height:1}
+.stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary,.btn-outline{display:inline-block;text-decoration:none;border-radius:50px;padding:.85rem 1.8rem;font-weight:700;font-size:.86rem;transition:.25s var(--ease)}
+.btn-primary{background:var(--cursor-gradient);color:#ffffff;box-shadow:0 12px 30px rgba(22,183,255,.18)}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--line);color:var(--cream)}
+.btn-outline:hover{border-color:var(--cursor-cyan);color:var(--cursor-cyan);transform:translateY(-2px)}
+.hero-card{background:var(--navy-mid);border:1px solid var(--line);border-radius:24px;padding:2.3rem;overflow:hidden}
+.profile-img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid transparent;background:linear-gradient(var(--navy-lt),var(--navy-lt)) padding-box,var(--cursor-gradient) border-box;display:block;margin-bottom:1.3rem}
+.card-name{font-family:var(--ff-head);font-size:1.5rem}
+.card-role{font-family:var(--ff-mono);font-size:.75rem;color:var(--gold);letter-spacing:1.2px;margin:.2rem 0 1.2rem;text-transform:uppercase}
+.hero-divider{width:45px;height:3px;background:var(--cursor-gradient);border-radius:5px;margin:1.3rem 0}
+.card-info-list{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.card-info-list li{color:var(--muted);font-size:.9rem;word-break:break-word}
+.card-info-list a{text-decoration:none;color:var(--muted)}
+.card-info-list a:hover{color:var(--gold-lt)}
+.brand-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.brand-mini{background:rgba(255,255,255,.04);border:1px solid var(--soft-line);border-radius:12px;padding:.75rem;display:flex;align-items:center;justify-content:center;min-height:78px;text-decoration:none}
+.brand-mini:hover{border-color:var(--cursor-cyan);transform:translateY(-2px);transition:.25s var(--ease)}
+.brand-mini img{max-width:100%;max-height:48px;object-fit:contain;filter:none}
+.brand-mini.zystra img{max-height:56px}
+
+/* sections */
+#about,#skills,#certificates,#projects,#startup,#linkedin,#contact{padding:7rem 0}
+#strengths,#experience,#education{padding:7rem 0;background:var(--navy-mid)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.about-text p{color:var(--muted);margin-bottom:1rem}
+.about-text strong{color:var(--cream)}
+.highlight-card,.skill-category,.project-card,.edu-card,.cert-card,.info-card{
+  background:var(--navy-mid);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  transition:.25s var(--ease);
+  box-shadow:0 18px 45px rgba(0,0,0,.10)
+}
+#experience .timeline-card,#education .edu-card,#strengths .highlight-card{background:var(--navy)}
+.highlight-card{padding:1.2rem 1.4rem;border-left:3px solid transparent;border-image:var(--cursor-gradient) 1;margin-bottom:1rem}
+.highlight-card:hover,.skill-category:hover,.project-card:hover,.edu-card:hover,.cert-card:hover,.info-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.highlight-card h4{color:var(--cream);margin-bottom:.3rem}
+.highlight-card p{color:var(--muted);font-size:.88rem}
+
+/* timeline */
+.timeline{position:relative}
+.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:1px;background:var(--line)}
+.timeline-item{position:relative;padding-left:58px;padding-bottom:2rem}
+.timeline-dot{position:absolute;left:9px;top:8px;width:19px;height:19px;border-radius:50%;border:2px solid var(--cursor-cyan);background:var(--navy-mid);box-shadow:0 0 0 4px rgba(22,183,255,.08)}
+.timeline-card{background:var(--navy);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+.exp-header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.exp-role{font-family:var(--ff-head);font-size:1.15rem}
+.exp-period{font-family:var(--ff-mono);font-size:.72rem;color:var(--gold);background:var(--gold-dim);border:1px solid var(--line);padding:.25rem .75rem;border-radius:40px;height:max-content}
+.exp-company{color:var(--gold-lt);font-weight:600;margin:.2rem 0}
+.exp-location{font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);margin-bottom:.8rem}
+.exp-bullets{list-style:none}
+.exp-bullets li{color:var(--muted);font-size:.88rem;margin:.45rem 0;padding-left:1.1rem;position:relative}
+.exp-bullets li:before{content:"▸";position:absolute;left:0;color:var(--cursor-green)}
+
+/* grids */
+.skills-grid,.projects-grid,.edu-grid,.cert-grid,.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
+.strength-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.skill-category,.project-card,.edu-card,.info-card{padding:1.7rem}
+.skill-cat-title,.project-tag,.info-tag{font-family:var(--ff-mono);color:var(--gold);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem}
+.skill-tags,.project-skills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.skill-tag,.project-skills span{font-size:.74rem;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:.35rem .65rem;text-decoration:none}
+.social-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:1.2rem;margin-bottom:.5rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.social-links{display:flex;flex-wrap:wrap;gap:.5rem}
+.social-links a{font-size:.74rem;color:var(--gold-lt);background:rgba(22,183,255,.07);border:1px solid rgba(22,183,255,.18);border-radius:6px;padding:.35rem .7rem;text-decoration:none;transition:.2s}
+.social-links a:hover{background:rgba(22,183,255,.15);border-color:var(--cursor-cyan);color:var(--white)}
+.project-title,.edu-degree,.info-title{font-family:var(--ff-head);font-size:1.15rem;margin-bottom:.5rem}
+.project-desc,.edu-year,.info-card p{color:var(--muted);font-size:.88rem}
+.edu-school{color:var(--gold-lt);font-weight:600}
+.project-logo{height:54px;display:flex;align-items:center;margin-bottom:1rem}
+.project-logo img{max-width:170px;max-height:54px;object-fit:contain;background:#fff;border-radius:10px;padding:7px;box-shadow:0 10px 24px rgba(0,0,0,.16)}
+.project-logo.logo-clear img{background:#06182f;padding:6px}
+
+/* certificates */
+.cert-card{padding:1rem;text-align:center;background:var(--navy-mid)}
+.cert-card img{width:100%;height:170px;object-fit:contain;background:#fff;border-radius:10px;padding:8px}
+.cert-card h3{font-size:.9rem;margin-top:.9rem;color:var(--cream)}
+.cert-card p{font-size:.78rem;color:var(--muted);margin-top:.2rem}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem}
+.contact-info p{color:var(--muted);margin:1rem 0 1.5rem}
+.contact-links{display:flex;flex-direction:column;gap:.8rem}
+.contact-link{display:flex;gap:.8rem;align-items:center;text-decoration:none;color:var(--muted);background:var(--navy-mid);border:1px solid var(--line);border-radius:var(--radius);padding:.9rem 1rem;word-break:break-word}
+.contact-link:hover{color:var(--gold-lt);border-color:var(--gold)}
+.contact-box{background:var(--navy-mid);border:1px solid var(--line);border-radius:var(--radius);padding:2rem}
+.contact-box h3{font-family:var(--ff-head);font-size:1.4rem;margin-bottom:.8rem}
+.contact-box p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem;text-align:center;color:var(--muted);font-family:var(--ff-mono);font-size:.8rem}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(25px);transition:.65s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:900px){.nav-links{gap:.9rem}.nav-links a{font-size:.68rem}}
+@media(max-width:768px){
+  nav{padding:1rem 1.3rem}
+  .hamburger{display:block}
+  .nav-links{position:fixed;top:60px;right:-100%;width:78vw;height:100vh;background:var(--navy-mid);flex-direction:column;align-items:flex-start;padding:2rem;border-left:1px solid var(--line);transition:.3s}
+  .nav-links.open{right:0}
+  .hero-inner,.about-grid,.contact-grid,.strength-grid{grid-template-columns:1fr}
+  .hero-stats{gap:1.2rem;flex-wrap:wrap}
+  .brand-strip{grid-template-columns:1fr}
+  .section-header{gap:.8rem}
+  .timeline:before{left:10px}
+  .timeline-item{padding-left:38px}
+  .timeline-dot{left:1px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">Md Sameer</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#startup">Startup</a></li>
+    <li><a href="#linkedin">LinkedIn</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open navigation"><span></span><span></span><span></span></button>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">Chief Operations Manager</div>
+      <h1 class="hero-name">Md<em>Sameer</em></h1>
+      <p class="hero-subtitle">
+        Chief Operations Manager at Bit Byte Fly Pvt. Ltd., SEO and digital growth professional, workflow management practitioner, and founder of Cursor Academy. I work across operations, team coordination, digital marketing, content strategy, reporting, and growth-focused execution.
+      </p>
+      <div class="hero-stats">
+        <div><div class="stat-num">3+</div><div class="stat-label">Years Digital & Ops Exp.</div></div>
+        <div><div class="stat-num">6+</div><div class="stat-label">Roles & Initiatives</div></div>
+        <div><div class="stat-num">COM</div><div class="stat-label">Current Role</div></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Contact Me</a>
+        <a href="#experience" class="btn-outline">View Experience</a>
+        <a href="#projects" class="btn-outline">View Projects</a>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <img src="sameer pic.jpg" alt="Md Sameer Profile Photo" class="profile-img">
+      <div class="card-name">Md Sameer</div>
+      <div class="card-role">Operations • SEO • Digital Growth</div>
+      <div class="hero-divider"></div>
+      <ul class="card-info-list">
+        <li>📍 Patna, Bihar, India</li>
+        <li>📞 <a href="tel:+919555911362">+91 9555911362</a></li>
+        <li>✉️ <a href="mailto:touchngursoul@gmail.com">touchngursoul@gmail.com</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/touchngursoul" target="_blank" rel="noopener">linkedin.com/in/touchngursoul</a></li>
+        <li>💻 <a href="https://github.com/touchngursoul" target="_blank" rel="noopener">github.com/touchngursoul</a></li>
+      </ul>
+      <div class="brand-strip">
+        <a class="brand-mini" href="https://www.bitbytefly.com" target="_blank" rel="noopener" title="Bit Byte Fly"><img src="bit byte fly.png" alt="Bit Byte Fly Logo"></a>
+        <a class="brand-mini zystra" href="https://zystra.in" target="_blank" rel="noopener" title="Zystra"><img src="zystra(1).png" alt="Zystra Logo"></a>
+        <a class="brand-mini" href="https://www.cursorseo.com" target="_blank" rel="noopener" title="Cursor Academy"><img src="cursoracad.jpeg" alt="Cursor Academy Logo"></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I am <strong>Md Sameer</strong>, a tech-driven operations and digital growth professional based in Patna, Bihar. I currently work as <strong>Chief Operations Manager at Bit Byte Fly Pvt. Ltd.</strong>, where I focus on daily operations, team coordination, task tracking, reporting structure, client tracking, SOP planning, and workflow improvement.</p>
+        <p>My professional journey includes hands-on experience in digital marketing, SEO, performance marketing, content strategy, document control, reporting, and data management. This mix helps me understand both business operations and digital growth from a practical execution point of view.</p>
+        <p>Before joining Bit Byte Fly, I worked as a <strong>Digital Marketing Executive at The Home Style</strong>, where I handled brand positioning, content strategy, social media growth, lead generation, and campaign performance tracking. I also worked with <strong>L&amp;T Hydrocarbon Engineering Limited</strong> as a Document Controller and with <strong>Ghosting Tech</strong> and <strong>TS Web Smartz</strong> in SEO roles.</p>
+        <p>I founded <strong>Cursor Academy</strong> to support students, beginners, freelancers, and aspiring professionals with practical digital marketing, SEO, AI tools, web basics, content strategy, and career-ready skills.</p>
+      </div>
+
+      <div class="about-highlights reveal">
+        <div class="highlight-card">
+          <h4>⚙️ Operations & Workflow Management</h4>
+          <p>Daily operations, team coordination, task tracking, SOP planning, reporting systems, client tracking, and workflow improvement.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🔍 SEO & Digital Growth</h4>
+          <p>Keyword research, on-page SEO, technical SEO, local SEO, website optimization, analytics, and organic visibility improvement.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>🎯 Content & Brand Strategy</h4>
+          <p>LinkedIn growth, brand positioning, social media content, lead-generation messaging, and practical digital storytelling.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>📊 Data, Reporting & Documentation</h4>
+          <p>Excel dashboards, Google Sheets, MIS reporting, EDMS workflows, document control, transmittals, RFIs, and compliance records.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="strengths">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">02</span>
+      <h2 class="section-title">Key Strength Areas</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="strength-grid">
+      <div class="highlight-card reveal"><h4>Operations & Workflow Management</h4><p>Process coordination, team updates, task systems, SOP planning, reporting structure, and execution management.</p></div>
+      <div class="highlight-card reveal"><h4>SEO & Digital Growth</h4><p>Website visibility, search strategy, keyword planning, technical SEO, content direction, and performance tracking.</p></div>
+      <div class="highlight-card reveal"><h4>Content & Brand Strategy</h4><p>Professional positioning, LinkedIn content, social media planning, educational content, and lead-generation messaging.</p></div>
+      <div class="highlight-card reveal"><h4>Training & Professional Development</h4><p>LinkedIn profile optimization, digital skills learning, personal branding guidance, and career-focused learning initiatives.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Chief Operations Manager</h3><span class="exp-period">June 2026 – Present</span></div>
+          <div class="exp-company">Bit Byte Fly Pvt. Ltd.</div>
+          <div class="exp-location">Patna, Bihar</div>
+          <ul class="exp-bullets">
+            <li>Managing daily operations, team coordination, task tracking, reporting structure, client tracking, and workflow improvement.</li>
+            <li>Supporting leadership vision through practical execution, team accountability, and structured work systems.</li>
+            <li>Working on SOP planning, daily update systems, operational clarity, and smoother project delivery.</li>
+            <li>Using digital marketing, SEO, and data management experience to support better operational decision-making.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Digital Marketing Executive</h3><span class="exp-period">Jan 2026 – June 2026</span></div>
+          <div class="exp-company">The Home Style</div>
+          <div class="exp-location">Patna, Bihar</div>
+          <ul class="exp-bullets">
+            <li>Led digital transformation and brand growth for an architecture and interior design business.</li>
+            <li>Built professional brand positioning through content strategy, social media planning, and digital storytelling.</li>
+            <li>Created LinkedIn, Instagram, and Facebook content focused on engagement, authority, and lead generation.</li>
+            <li>Tracked audience growth, engagement trends, and campaign performance to improve business inquiries.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Document Controller</h3><span class="exp-period">Feb 2025 – Nov 2025</span></div>
+          <div class="exp-company">L&amp;T Hydrocarbon Engineering Limited</div>
+          <div class="exp-location">Barmer, Rajasthan</div>
+          <ul class="exp-bullets">
+            <li>Managed technical documents, drawings, correspondence, transmittals, RFIs, and submittal records for the PFCCU–APEX Infra site project.</li>
+            <li>Handled EDMS filing, indexing, retrieval, revision control, and structured documentation workflows.</li>
+            <li>Maintained accurate logs and compliance-ready records aligned with quality and safety standards.</li>
+            <li>Coordinated between engineering, construction, QA/QC, and client teams to ensure updated document availability.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">SEO Executive</h3><span class="exp-period">Sep 2023 – Feb 2025</span></div>
+          <div class="exp-company">Ghosting Tech</div>
+          <div class="exp-location">Patna, Bihar</div>
+          <ul class="exp-bullets">
+            <li>Conducted keyword research, competitor analysis, website optimization, and SEO performance tracking.</li>
+            <li>Implemented on-page, off-page, and technical SEO practices to improve search visibility and rankings.</li>
+            <li>Analyzed website traffic and performance metrics to refine SEO strategy and content direction.</li>
+            <li>Supported organic visibility, website engagement, and digital growth campaigns for client websites.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Jr. SEO Executive</h3><span class="exp-period">Feb 2023 – Aug 2023</span></div>
+          <div class="exp-company">TS Web Smartz</div>
+          <div class="exp-location">Mohali, Punjab</div>
+          <ul class="exp-bullets">
+            <li>Implemented SEO strategies to improve website rankings and organic traffic.</li>
+            <li>Performed keyword research, SEO-friendly content creation, and on-page element optimization.</li>
+            <li>Monitored website analytics and prepared performance updates for strategy improvement.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Digital Marketing Training</h3><span class="exp-period">Oct 2022 – Jan 2023</span></div>
+          <div class="exp-company">SEO Discovery Private Limited</div>
+          <div class="exp-location">Mohali, Punjab</div>
+          <ul class="exp-bullets">
+            <li>Gained practical exposure to SEO, SMO, PPC, email marketing, and content marketing.</li>
+            <li>Learned campaign planning, website traffic analysis, content optimization, and reporting workflows.</li>
+            <li>Built a strong foundation in digital marketing execution and performance improvement.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <article class="timeline-card">
+          <div class="exp-header"><h3 class="exp-role">Salesman</h3><span class="exp-period">Oct 2020 – Oct 2021</span></div>
+          <div class="exp-company">Baazar Style Retail Ltd.</div>
+          <div class="exp-location">Gopalganj, Bihar</div>
+          <ul class="exp-bullets">
+            <li>Handled customer service, POS billing, stock in/out records, inventory updates, and floor operations.</li>
+            <li>Managed 100+ customer interactions daily and supported monthly sales targets through proactive engagement.</li>
+            <li>Improved stock accuracy by updating inventory records and reducing manual errors.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">04</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal"><div class="skill-cat-title">Operations & Management</div><div class="skill-tags"><span class="skill-tag">Operations Control</span><span class="skill-tag">Daily Operations Management</span><span class="skill-tag">Team Coordination</span><span class="skill-tag">Task Tracking</span><span class="skill-tag">SOP Planning</span><span class="skill-tag">Workflow Management</span><span class="skill-tag">Reporting Structure</span><span class="skill-tag">Client Tracking</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">SEO & Search Growth</div><div class="skill-tags"><span class="skill-tag">Search Engine Optimization</span><span class="skill-tag">Technical SEO</span><span class="skill-tag">On-Page SEO</span><span class="skill-tag">Off-Page SEO</span><span class="skill-tag">Keyword Research</span><span class="skill-tag">Local SEO</span><span class="skill-tag">Website Optimization</span><span class="skill-tag">Competitor Analysis</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">Digital Marketing & Brand Growth</div><div class="skill-tags"><span class="skill-tag">Performance Marketing</span><span class="skill-tag">Content Strategy</span><span class="skill-tag">Brand Positioning</span><span class="skill-tag">Social Media Optimization</span><span class="skill-tag">Lead Generation</span><span class="skill-tag">LinkedIn Growth</span><span class="skill-tag">Digital Storytelling</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">Tools & Platforms</div><div class="skill-tags"><span class="skill-tag">Google Search Console</span><span class="skill-tag">Google Analytics</span><span class="skill-tag">SEMrush</span><span class="skill-tag">Ahrefs</span><span class="skill-tag">WordPress</span><span class="skill-tag">Canva</span><span class="skill-tag">MS Office</span><span class="skill-tag">Google Sheets</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">Data & Reporting</div><div class="skill-tags"><span class="skill-tag">Excel Dashboards</span><span class="skill-tag">MIS Reporting</span><span class="skill-tag">Performance Analysis</span><span class="skill-tag">Data Management</span><span class="skill-tag">Reporting Automation</span><span class="skill-tag">Documentation Tracking</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">Document Control</div><div class="skill-tags"><span class="skill-tag">EDMS</span><span class="skill-tag">Transmittals</span><span class="skill-tag">RFI Management</span><span class="skill-tag">Submittals</span><span class="skill-tag">Revision Control</span><span class="skill-tag">Compliance Records</span><span class="skill-tag">Filing & Indexing</span></div></div>
+      <div class="skill-category reveal"><div class="skill-cat-title">Training & Personal Branding</div><div class="skill-tags"><span class="skill-tag">LinkedIn Profile Optimization</span><span class="skill-tag">Personal Branding</span><span class="skill-tag">Career Guidance</span><span class="skill-tag">Digital Skills Training</span><span class="skill-tag">Professional Communication</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">05</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal"><div class="edu-degree">Bachelor of Computer Applications (BCA)</div><div class="edu-school">Amity University Online</div><div class="edu-year">January 2024 – Expected 2027</div></div>
+      <div class="edu-card reveal"><div class="edu-degree">Intermediate in Science</div><div class="edu-school">Hazarilal High School</div><div class="edu-year">June 2019 – March 2021</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">06</span>
+      <h2 class="section-title">Certificates</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal"><img src="adca certi.jpg" alt="ADCA Certificate"><h3>ADCA Certificate</h3><p>Computer Applications</p></div>
+      <div class="cert-card reveal"><img src="advance excel amity.jpg" alt="Advanced Excel Amity Certificate"><h3>Advanced Excel</h3><p>Amity</p></div>
+      <div class="cert-card reveal"><img src="digital marketing certi.jpg" alt="Digital Marketing Certificate"><h3>Digital Marketing Certificate</h3><p>Digital Marketing</p></div>
+      <div class="cert-card reveal"><img src="excel.jpg" alt="Excel Certificate"><h3>Excel Certificate</h3><p>Spreadsheet Skills</p></div>
+      <div class="cert-card reveal"><img src="gen ai.jpg" alt="Generative AI Certificate"><h3>Generative AI Certificate</h3><p>AI Learning</p></div>
+      <div class="cert-card reveal"><img src="posh l&t.jpg" alt="POSH L&T Certificate"><h3>POSH Certificate</h3><p>L&amp;T</p></div>
+      <div class="cert-card reveal"><img src="posh skill india.jpg" alt="POSH Skill India Certificate"><h3>POSH Certificate</h3><p>Skill India</p></div>
+      <div class="cert-card reveal"><img src="prompt eng.jpg" alt="Prompt Engineering Certificate"><h3>Prompt Engineering</h3><p>AI Prompting</p></div>
+      <div class="cert-card reveal"><img src="typing.jpg" alt="Typing Certificate"><h3>Typing Certificate</h3><p>Typing Skills</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">07</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-logo"><img src="bit byte fly.png" alt="Bit Byte Fly Logo"></div>
+        <div class="project-tag">Current Role</div>
+        <h3 class="project-title">Bit Byte Fly Operations & Workflow Management</h3>
+        <p class="project-desc">Managing daily operations, team coordination, task tracking, reporting structure, client tracking, daily update systems, SOP planning, and workflow improvement as Chief Operations Manager at Bit Byte Fly Pvt. Ltd.</p>
+        <div class="project-skills"><span>Operations Management</span><span>Team Coordination</span><span>Workflow Systems</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-logo"><img src="cursoracad.jpeg" alt="Cursor Academy Logo"></div>
+        <div class="project-tag">Education Venture</div>
+        <h3 class="project-title"><a href="https://www.cursorseo.com" target="_blank" rel="noopener">Cursor Academy — Digital Skills Learning Initiative ↗</a></h3>
+        <p class="project-desc">Building a practical learning initiative focused on digital marketing, SEO, AI tools, web basics, content strategy, and career-ready skills for students, beginners, freelancers, and aspiring professionals.</p>
+        <div class="project-skills"><span>Digital Skills</span><span>SEO Training</span><span>Career Learning</span></div>
+        <div class="social-label">Follow Cursor Academy</div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/cursoracad" target="_blank" rel="noopener">📘 Facebook</a>
+          <a href="https://www.instagram.com/cursoracad" target="_blank" rel="noopener">📸 Instagram</a>
+          <a href="https://x.com/cursoracad" target="_blank" rel="noopener">🐦 X</a>
+          <a href="https://www.linkedin.com/company/cursoracad" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="https://www.youtube.com/@cursoracad" target="_blank" rel="noopener">▶️ YouTube</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-logo logo-clear"><img src="zystra(1).png" alt="Zystra Logo"></div>
+        <div class="project-tag">Collaboration</div>
+        <h3 class="project-title"><a href="https://zystra.in" target="_blank" rel="noopener">Zystra Technologies Pvt. Ltd. ↗</a></h3>
+        <p class="project-desc">Collaborating with Zystra Technologies through support and collaboration for digital presence, web support, learning initiatives, and professional development activities connected with Cursor Academy and digital growth.</p>
+        <div class="project-skills"><span>Collaboration</span><span>Web Support</span><span>Digital Growth</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-tag">SEO</div>
+        <h3 class="project-title">SEO & Organic Growth Campaigns</h3>
+        <p class="project-desc">Worked on keyword research, on-page SEO, technical SEO, competitor analysis, content direction, website optimization, and performance tracking to improve website visibility and organic traffic.</p>
+        <div class="project-skills"><span>SEO</span><span>Organic Growth</span><span>Search Visibility</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-tag">Operations</div>
+        <h3 class="project-title">PFCCU–APEX Infra Document Control Workflow</h3>
+        <p class="project-desc">Managed EDMS documentation, transmittals, RFIs, revision control, filing, indexing, and coordination between engineering, construction, QA/QC, and client teams for the PFCCU–APEX Infra site project.</p>
+        <div class="project-skills"><span>EDMS</span><span>Documentation</span><span>Compliance</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-tag">Training / Personal Branding</div>
+        <h3 class="project-title">LinkedIn Profile Optimization Workshop</h3>
+        <p class="project-desc">Led a practical LinkedIn Profile Optimization Workshop in collaboration with Bit Byte Fly and Zystra Technologies. The session focused on profile positioning, headline optimization, About section improvement, content presence, personal branding, and professional visibility in the AI-driven digital era.</p>
+        <div class="project-skills"><span>LinkedIn Growth</span><span>Personal Branding</span><span>Training</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="startup">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">08</span>
+      <h2 class="section-title">Startup Learning & Acceleration</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <div class="info-tag">Startup Bihar Ecosystem</div>
+        <h3 class="info-title">Startup Acceleration Program 2026</h3>
+        <p>I participated in the Startup Acceleration Program 2026 at B-HUB BSFC, Patna, under the Startup Bihar ecosystem. The program gave me practical exposure to startup strategy, business growth, innovation, mentorship, AI and technology, market readiness, MVP thinking, and sustainable execution.</p>
+        <div class="project-skills"><span>Startup Strategy</span><span>Innovation</span><span>MVP Thinking</span><span>Market Readiness</span><span>Sustainable Execution</span></div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-tag">Learning Outcome</div>
+        <h3 class="info-title">From Idea to Scalable Execution</h3>
+        <p>This experience helped me understand how startup ideas can be refined, structured, validated, and converted into scalable business models with the right mentorship, strategy, and execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="linkedin">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">09</span>
+      <h2 class="section-title">LinkedIn Journey & Thought Leadership</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Over the last two years, I have used LinkedIn as a platform to learn openly, share practical knowledge, and build a professional community around digital marketing, SEO, operations, startups, career growth, and personal branding.</p>
+        <p>Today, my LinkedIn community has grown to <strong>8,000+ followers</strong>, including professionals, founders, marketers, creators, students, and learners from different backgrounds. For me, this is not just a number. It represents trust, consistency, meaningful learning, and community-driven professional growth.</p>
+        <p>My content philosophy is simple: <strong>Learn openly. Share honestly. Grow consistently.</strong></p>
+        <p>I believe LinkedIn is no longer just an online resume. It is a professional identity, a networking platform, and a powerful growth tool for people who want to build visibility, credibility, and better career opportunities.</p>
+      </div>
+      <div class="about-highlights reveal">
+        <div class="highlight-card"><h4>Content Themes</h4><p>Digital marketing, SEO, operations and growth systems, lead generation, startups and entrepreneurship, personal branding, and career learning.</p></div>
+        <div class="highlight-card"><h4>Workshop Experience</h4><p>Led a LinkedIn Profile Optimization Workshop focused on profile positioning, headline optimization, About section clarity, content presence, and personal branding.</p></div>
+        <div class="highlight-card"><h4>Community Growth</h4><p>Built a LinkedIn community of 8,000+ followers by sharing consistent, practical, and learning-focused professional content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">10</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let’s build better systems and stronger digital growth together.</h3>
+        <p>For operations management, SEO, digital growth, content strategy, LinkedIn profile optimization, training/workshops, documentation systems, or collaboration opportunities, you can contact me directly.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="tel:+919555911362">📞 +91 9555911362</a>
+          <a class="contact-link" href="https://wa.me/919555911362" target="_blank" rel="noopener">💬 WhatsApp: +91 9555911362</a>
+          <a class="contact-link" href="mailto:touchngursoul@gmail.com">✉️ touchngursoul@gmail.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/touchngursoul" target="_blank" rel="noopener">🔗 LinkedIn: touchngursoul</a>
+          <a class="contact-link" href="https://github.com/touchngursoul" target="_blank" rel="noopener">💻 GitHub: touchngursoul</a>
+        </div>
+      </div>
+
+      <div class="contact-box reveal">
+        <h3>Available For</h3>
+        <p>Operations management, SEO and digital growth projects, content strategy, brand growth, LinkedIn profile optimization, digital marketing consulting, training/workshops, documentation systems, reporting systems, and collaboration opportunities.</p>
+        <br>
+        <a href="mailto:touchngursoul@gmail.com" class="btn-primary">Send Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Md Sameer · Chief Operations Manager · SEO & Digital Growth Professional · Portfolio
+</footer>
+
+<script>
+const hamburger=document.getElementById("hamburger");
+const navLinks=document.getElementById("navLinks");
+hamburger.addEventListener("click",()=>navLinks.classList.toggle("open"));
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>navLinks.classList.remove("open")));
+
+const reveals=document.querySelectorAll(".reveal");
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+reveals.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
